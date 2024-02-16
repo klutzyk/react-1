@@ -1,31 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
+import react from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-const navbar = (
-  <nav>
-    <h1>First navbar</h1>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-    </ul>
-  </nav>
-)
-
-const body = (
+const page = (
   <div>
-    <head>
-      <title>1st React page</title>
-    </head>
-    
-    <body>
-      <h1>This is the first React page</h1>
-    </body>
+    <img src="/react1/public/logo192.png" alt="React" />
+    <h1>Fun facts about React!</h1>
+    <ul>
+      <li>Was released in 2013</li>
+      <li>Created by Jordan Walk</li>
+      <li>Over 100k stars on Github</li>
+      <li>Powers thousands of enterprise apps</li>
+    </ul>
   </div>
-)
+);
 
-root.render([navbar, body])
+ReactDOM.render(page, document.getElementById("root"));
