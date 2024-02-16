@@ -1,19 +1,17 @@
 import react from "react";
 import ReactDOM from "react-dom";
 
-function PageFunc() {
+// Component
+function PageComp() {
   return (
     <div>
-      <img src="/react1/public/logo192.png" alt="React" />
-      <h1>Fun facts about React!</h1>
-      <ul>
-        <li>Was released in 2013</li>
-        <li>Created by Jordan Walk</li>
-        <li>Over 100k stars on Github</li>
-        <li>Powers thousands of enterprise apps</li>
-      </ul>
+      <ol>
+        <li>React</li>
+        <li>Node</li>
+        <li>Angular</li>
+      </ol>
     </div>
   );
 }
 
-ReactDOM.render(<PageFunc />, document.getElementById("root"));
+ReactDOM.render(<PageComp />, document.getElementById("root"));
