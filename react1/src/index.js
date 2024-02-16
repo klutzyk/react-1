@@ -6,11 +6,6 @@ import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
-
 const navbar = (
   <nav>
     <h1>First navbar</h1>
@@ -21,7 +16,16 @@ const navbar = (
   </nav>
 )
 
-root.render(navbar)
+const body = (
+  <div>
+    <head>
+      <title>1st React page</title>
+    </head>
+    
+    <body>
+      <h1>This is the first React page</h1>
+    </body>
+  </div>
+)
 
-
-// ReactDOM.render(navbar, document.getElementById("root"))
+root.render([navbar, body])
