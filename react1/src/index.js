@@ -1,7 +1,7 @@
 import react from "react";
 import ReactDOM from "react-dom";
 
-function pageFunc() {
+function PageFunc() {
   return (
     <div>
       <img src="/react1/public/logo192.png" alt="React" />
@@ -16,4 +16,4 @@ function pageFunc() {
   );
 }
 
-ReactDOM.render(pageFunc(), document.getElementById("root"));
+ReactDOM.render(<PageFunc />, document.getElementById("root"));
